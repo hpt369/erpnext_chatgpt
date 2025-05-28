@@ -126,7 +126,12 @@ def ask_openai_question(conversation: List[Dict[str, Any]]) -> Dict[str, Any]:
         frappe.logger("OpenAI").debug(f"Conversation ➜ {json.dumps(conversation)}")
 
         # --- FIRST PASS -----------------------------------------------------
-        functions = get_tools()
+        raw_tools = get_tools()
+
+        functions = [
+            t["function"] if t.get("type") == "function" and "function" in t else t
+            for t in raw_tools
+        ]
         first_resp = openai.ChatCompletion.create(
             model           = MODEL,
             messages        = conversation,
