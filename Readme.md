@@ -1,6 +1,6 @@
 # ERPNext OpenAI Integration
 
-Welcome to the ERPNext OpenAI Integration app. This app allows you to integrate OpenAI functionality with your ERPNext system, enabling advanced AI-powered capabilities.
+Hi, Welcome to the ERPNext OpenAI Integration app. This app allows you to integrate OpenAI functionality with your ERPNext system, enabling advanced AI-powered capabilities.
 
 ## Features
 
