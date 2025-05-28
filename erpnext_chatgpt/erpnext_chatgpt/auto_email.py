@@ -2,7 +2,7 @@ import frappe
 from frappe.utils import now
 from frappe import _
 
-from erpnext_chatgpt.openai_api import ask_openai_question   # <- the file you rewrote
+from erpnext_chatgpt.erpnext_chatgpt.api import ask_openai_question   # <- the file you rewrote
 
 SYSTEM_PROMPT = (
     "You are an AI support agent for {company}. Draft a clear, polite, accurate "
