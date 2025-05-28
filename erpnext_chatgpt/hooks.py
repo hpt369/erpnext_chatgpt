@@ -18,6 +18,6 @@ doctype_js = {
 fixtures = [{"dt": "DocType", "filters": [["name", "in", ["OpenAI Settings"]]]}]
 doc_events = {
     "Communication": {
-        "after_insert": "erpnext_chatgpt.auto_email.reply_to_incoming"
+        "after_insert": "erpnext_chatgpt.erpnext_chatgpt.auto_email.reply_to_incoming"
     }
 }
